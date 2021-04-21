@@ -1,0 +1,140 @@
+body {
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+button:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 2em;
+    background-color:blue;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+button .cart{
+    width: 50px;
+    height: 50px;
+}
+
+/***********************************************************************
+ *  Slide Show
+ **********************************************************************/
+.container {
+    /*show heigh: auto*/
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: crimson;
+    margin-top: 80px;
+}
+
+.cover {
+    width: 30rem;
+    
+}
+.tarp{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    background-color: darkcyan;
+    
+}
+
+.box {
+    background-color: cyan;
+    padding: 50px;
+    margin: 5px;
+}
+
+
+
+.box:hover {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.box > .items {
+    width: 100%;
+    height: auto;
+
+}
+
+label{
+    font-size: 20px;
+    color: black;
+}
+
+/* .btn {
+    width: 100px;
+    height: 50px;
+    color: black;
+    background-color:tomato;
+    font-size: 13px;
+    font-family: Verdana;
+} */
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    font-size: 20px;
+}
+
